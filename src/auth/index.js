@@ -19,52 +19,67 @@ export default {
 
   login(context, creds, redirect) {
 
-      axios.post(LOGIN_URL,creds,{headers:{'content-type': 'application/json'}})
-          .then((data) => {
-            console.log(creds)
-            localStorage.setItem('access_token', data.data.token)
-            localStorage.setItem('id_token', data.data.id_token)
-            localStorage.setItem('user_logged', creds.username)
+            localStorage.setItem('access_token', "token")
+            localStorage.setItem('id_token', "id_token")
+            localStorage.setItem('user_logged',"admin")
+
+            if(creds.username=="admin"&&creds.password=="admin"){
+
+              // this.user.data=user_data.data;
+              // localStorage.setItem('user_data',JSON.stringify(user_data.data))
+              this.user.authenticated = true
+    
+              context.$router.push('/account')
+              
+            }
+            else {
+              context.error="Error con las credenciales"
+            }
+
+      // axios.post(LOGIN_URL,creds,{headers:{'content-type': 'application/json'}})
+      //     .then((data) => {
+      //       console.log(creds)
+      //       localStorage.setItem('access_token', data.data.token)
+      //       localStorage.setItem('id_token', data.data.id_token)
+      //       localStorage.setItem('user_logged', creds.username)
             
-            var token=this.getAuthHeader();
+      //       var token=this.getAuthHeader();
 
-            axios.get(PERMISOS_URL,{headers:token})
-                .then((data2) => {
+      //       axios.get(PERMISOS_URL,{headers:token})
+      //           .then((data2) => {
 
-                     axios.get(USER_URL+creds.username,{headers:token})
-                      .then((user_data) => {
+      //                axios.get(USER_URL+creds.username,{headers:token})
+      //                 .then((user_data) => {
 
-                        console.log("data USer:", user_data.data)
-                        this.user.data=user_data.data;
-                        localStorage.setItem('user_data',JSON.stringify(user_data.data))
-                        this.user.authenticated = true
-                        console.log("--..--..--..--..--")
-                        console.log(user_data.data.Usuario_tipos_id)
-                        if(user_data.data.Usuario_tipos_id==1)
-                         this.user.isAdmin=true;
-                        else
-                          this.user.isAdmin=false;
+      //                   this.user.data=user_data.data;
+      //                   localStorage.setItem('user_data',JSON.stringify(user_data.data))
+      //                   this.user.authenticated = true
+              
+      //                   if(user_data.data.Usuario_tipos_id==1)
+      //                    this.user.isAdmin=true;
+      //                   else
+      //                     this.user.isAdmin=false;
 
-                        context.$router.push('/account')
+      //                   context.$router.push('/account')
                         
-                      })
-                      .catch(e => {
-                        context.error=e.response.data.message
-                    })
+      //                 })
+      //                 .catch(e => {
+      //                   context.error=e.response.data.message
+      //               })
 
-                      // this.user.authenticated = true
+      //                 // this.user.authenticated = true
 
-                      // context.$router.push('/admin')
+      //                 // context.$router.push('/admin')
                   
-                })
-                .catch(e => {
-                  context.error=e.response.data.message
-                })
+      //           })
+      //           .catch(e => {
+      //             context.error=e.response.data.message
+      //           })
             
-          })
-          .catch(e => {
-            context.error=e.response.data.message
-          })
+      //     })
+      //     .catch(e => {
+      //       context.error=e.response.data.message
+      //     })
   },
 
 
