@@ -1,0 +1,340 @@
+/*
+Paleta de colores android
+
+
+    <!-- Primary Naranja-->
+    <color name="primary_main">#D86636</color>
+    <color name="primary_dark">#B54819</color>
+    <color name="primary_darker">#8F2D04</color>
+    <color name="primary_light">#F0885C</color>
+    <color name="primary_lighter">#FFAE8B</color>
+
+    <!-- Secondary Azul-->
+    <color name="secondary_main">#2A5F8B</color>
+    <color name="secondary_dark">#2A5F8B</color>
+    <color name="secondary_darker">#08365c</color>
+    <color name="secondary_light">#42739b</color>
+    <color name="secondary_lighter">#6A95B8</color>
+*/
+iframe {
+    border:none;
+}
+h1,h2,h3,h4{
+  color:#08365c;
+}
+body {
+  
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-size:14px;
+    color: #444;
+
+
+}
+html, body {
+  height: 100%;
+}
+
+body, .breadcrumb {
+  /*   background-color: #f8f8f8;*/
+}
+@media (min-width: 768px){
+  .navbar{
+    border-radius: 0px;
+  }
+}
+
+a {
+  color: #42b983;
+}
+
+.navbar-default{
+  background-color: #043252;
+  border-bottom: solid 2px #E7E7E6;
+  border-color: #2a5f8b;
+}
+.navbar-brand > img{
+  max-height: 40px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.logo-text{
+  display: inline-block;
+  vertical-align: text-bottom;
+  color:white;
+}
+.navbar-brand{padding: 5px 5px;}
+.navbar-brand .title{font-size: 1.2em;}
+.navbar-brand .sub-title{font-size: 0.5em;}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.btn-default {
+    color: #2A5F8B;
+    background-color: #fff;
+    border-color: #2A5F8B;
+}
+.btn-default:active ,.btn-default:hover{
+  color:white;
+  background-color: #42739B; /* F0F7FC*/
+  border-color: #2A5F8B;
+}
+
+.btn-default-2 {
+    color: #D86636;
+    background-color: #fff;
+    border-color: #D86636;
+}
+.btn-default-2:active , .btn-default-2:hover {
+  color:white;
+  background-color: #10649F; /* F0F7FC*/
+  border-color: #D86636;
+}
+
+.breadcrumb {
+  padding-left: 0px;
+  background-color: #fff;
+  /* width: 100%; */
+  border-bottom: solid 1px #e8e8e8;
+  border-radius: 0px;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  /*margin-bottom: 5%;*/
+  min-height: 70%;
+  padding-bottom: 60px;
+}
+
+footer.content-footer{
+width: 100%;
+/* margin-bottom: 5%; */
+margin-top: 30px;
+/* padding-top: 20px; */
+border-top: solid 1px #ccc;
+position: relative;
+/* margin-top: -120px; */
+height: 120px;
+clear: both;
+background: #e5e5e5;
+
+}
+.logo-footer{
+  max-height: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.center-footer{
+  /*width: 50%;*/
+  margin: 0 auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:50%;
+  color: #777;
+  margin-top: 20px;
+  font-size: 1.13em;
+}
+.text-footer{
+  display: inline-block;
+  vertical-align: bottom;
+  transform: translateY(5px);
+}
+a .text-footer{
+  color: #777;
+}
+a:hover .text-footer{
+  color:#555;
+}
+.margin1 {
+    margin: 1%;
+}
+
+.margintop {
+    margin-top: 3%;
+}
+
+.caret-container {
+    float: right;
+}
+
+.nav-container {
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-sub-container {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul.nav-stacked ul.nav-stacked > li > a {
+    padding-left: 30px;
+}
+
+ul.dropdown-menu > li {
+    /*margin-bottom: 10px;*/
+}
+.navbar-default .navbar-nav > li > a{
+  /*border-bottom: solid 0px #e7e7e7;
+  transition: 300ms ease;*/
+
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+  color: white;
+  background-color: inherit;
+  /*border-bottom: solid 5px #08365c;*/
+}
+.navbar-default .navbar-nav > li > a::after{
+  content: '';
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  background-color: #FF8F65;
+  bottom: 0px;
+  left: 0px;
+  transition: 500ms ease;
+}
+.navbar-default .navbar-nav > .active > a::after,
+.navbar-default .navbar-nav > li:hover > a::after{
+  height: 3px;
+  color:white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #42739b;
+}
+
+
+.row {
+    margin-bottom: 15px;
+}
+
+#map {
+    width:100%;
+    height:300px
+}
+
+#description, #description_task {
+    resize:vertical;
+}
+
+/*
+    Tablas
+*/
+
+
+table {     
+        font-size: 15px;    
+        margin: 45px;    
+        /*width: 480px; */
+        /*text-align: left;   */
+        border-collapse: collapse; 
+      }
+
+th {     
+    font-size: 16px;     
+    /*font-weight: bold;    */
+    padding: 13px;     
+    background: #07AC61;
+    text-align: center;
+    /*border-top: 4px solid #aabcfe;    */
+    /*border-bottom: 1px solid #fff; */
+    color: white ;
+  }
+
+td {    
+  margin:2px;
+    padding: 13px;     
+    /*background: #FFD865;     */
+
+    border-bottom: 2px solid #fff;
+    color: rgb(91, 102, 103);    
+    border-top: 1px ; 
+    border-bottom: 1px ;
+ }
+
+tr{
+   border-top: 1.5px solid #42b983;
+
+}
+td{
+  color:#42b983;
+}
+tr:hover td {   
+  background: #477DA4; 
+  /*border-top: 2px solid #aabcfe; 
+  bor*/der-bottom: 2px solid #aabcfe; 
+  color: white; 
+}
+table tr td:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+.userInProcess{
+  color:#BCBCBC;
+  font-style:italic;
+  /*background-color: #FFD8A5;*/
+  /*border-bottom: 2px solid #BCBCBC;*/
+}
+.userAdmin.type{
+  color:#DD094D;
+ 
+  /*border-bottom: 2px solid #DD094D;*/
+}
+.userNormal.type{
+  color:#46b8da;
+
+  /*border-bottom: 2px solid #FCA83B;*/
+
+}
+
+.bottom-buttons {
+  padding-top:60px;
+
+}
+
+.width100{
+    width: 100%
+}
+
+.display-none{
+  display:none;
+}
+
+.emergency-title {
+  background: #ddd;
+  font-weight:bold
+}
+
+.mission-title {
+  font-weight:normal;
+}
+
+.mission-list-title {
+  text-transform: none;
+}
+
+.btn-recruit {
+   white-space: normal;
+   text-align: center;
+}
+
+.timepicker-sbs {
+  z-index:10000
+}
