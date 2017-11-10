@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # admin_mensajeria
 
 > A Vue.js project
@@ -19,3 +20,7 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# Jayma-Admin
+Panel de administración para aplicación JAYMA
+>>>>>>> 5f60ba14078ed30182fe34db29509a8461f05857
